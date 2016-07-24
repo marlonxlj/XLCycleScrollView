@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
 
   s.name         = "XLCycleScrollView"
 
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
 
   s.summary      = "简化图片轮播的繁琐写法，实现简单方便的使用"
 
@@ -22,9 +22,10 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = "7.0"
 
-  s.source       = { :git => "https://github.com/marlonxlj/XLCycleScrollView.git", :tag => "0.0.1" }
+  s.source       = { :git => "https://github.com/marlonxlj/XLCycleScrollView.git", :tag => "0.0.2" }
 
-  s.source_files  = "XLCycleScrollView/Lib/XLCycleScrollView/**/*.{h,m}"
+  # s.source_files  = "XLCycleScrollView","XLCycleScrollView/Lib/XLCycleScrollView/**/*.{h,m}"
+  s.source_files  = "Libs/XLCycleScrollView/**/*.{h,m}"
 
   s.requires_arc = true
 

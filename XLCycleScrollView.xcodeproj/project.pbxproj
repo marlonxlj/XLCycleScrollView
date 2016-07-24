@@ -15,6 +15,8 @@
 		17EA67BA1D450DC200C3DFC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17EA67B81D450DC200C3DFC0 /* LaunchScreen.storyboard */; };
 		17EA67C51D450DC200C3DFC0 /* XLCycleScrollViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17EA67C41D450DC200C3DFC0 /* XLCycleScrollViewTests.m */; };
 		17EA67D01D450DC200C3DFC0 /* XLCycleScrollViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17EA67CF1D450DC200C3DFC0 /* XLCycleScrollViewUITests.m */; };
+		17EA67E21D451C6B00C3DFC0 /* TestWithPod.m in Sources */ = {isa = PBXBuildFile; fileRef = 17EA67E11D451C6B00C3DFC0 /* TestWithPod.m */; };
+		17EA67E51D451C7600C3DFC0 /* PageTestPod.m in Sources */ = {isa = PBXBuildFile; fileRef = 17EA67E41D451C7600C3DFC0 /* PageTestPod.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		17EA67CB1D450DC200C3DFC0 /* XLCycleScrollViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XLCycleScrollViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		17EA67CF1D450DC200C3DFC0 /* XLCycleScrollViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XLCycleScrollViewUITests.m; sourceTree = "<group>"; };
 		17EA67D11D450DC200C3DFC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17EA67E01D451C6B00C3DFC0 /* TestWithPod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestWithPod.h; sourceTree = "<group>"; };
+		17EA67E11D451C6B00C3DFC0 /* TestWithPod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestWithPod.m; sourceTree = "<group>"; };
+		17EA67E31D451C7600C3DFC0 /* PageTestPod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageTestPod.h; sourceTree = "<group>"; };
+		17EA67E41D451C7600C3DFC0 /* PageTestPod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageTestPod.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,7 @@
 		17EA67A91D450DC200C3DFC0 /* XLCycleScrollView */ = {
 			isa = PBXGroup;
 			children = (
+				17EA67DD1D451C5700C3DFC0 /* Lib */,
 				17EA67AD1D450DC200C3DFC0 /* AppDelegate.h */,
 				17EA67AE1D450DC200C3DFC0 /* AppDelegate.m */,
 				17EA67B01D450DC200C3DFC0 /* ViewController.h */,
@@ -138,6 +145,33 @@
 				17EA67D11D450DC200C3DFC0 /* Info.plist */,
 			);
 			path = XLCycleScrollViewUITests;
+			sourceTree = "<group>";
+		};
+		17EA67DD1D451C5700C3DFC0 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				17EA67DE1D451C5700C3DFC0 /* XLCycleScrollView */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		17EA67DE1D451C5700C3DFC0 /* XLCycleScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				17EA67DF1D451C5700C3DFC0 /* PageController */,
+				17EA67E01D451C6B00C3DFC0 /* TestWithPod.h */,
+				17EA67E11D451C6B00C3DFC0 /* TestWithPod.m */,
+			);
+			path = XLCycleScrollView;
+			sourceTree = "<group>";
+		};
+		17EA67DF1D451C5700C3DFC0 /* PageController */ = {
+			isa = PBXGroup;
+			children = (
+				17EA67E31D451C7600C3DFC0 /* PageTestPod.h */,
+				17EA67E41D451C7600C3DFC0 /* PageTestPod.m */,
+			);
+			path = PageController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,8 +305,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				17EA67B21D450DC200C3DFC0 /* ViewController.m in Sources */,
+				17EA67E51D451C7600C3DFC0 /* PageTestPod.m in Sources */,
 				17EA67AF1D450DC200C3DFC0 /* AppDelegate.m in Sources */,
 				17EA67AC1D450DC200C3DFC0 /* main.m in Sources */,
+				17EA67E21D451C6B00C3DFC0 /* TestWithPod.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +532,7 @@
 				17EA67D61D450DC200C3DFC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		17EA67D71D450DC200C3DFC0 /* Build configuration list for PBXNativeTarget "XLCycleScrollViewTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +541,7 @@
 				17EA67D91D450DC200C3DFC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		17EA67DA1D450DC200C3DFC0 /* Build configuration list for PBXNativeTarget "XLCycleScrollViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +550,7 @@
 				17EA67DC1D450DC200C3DFC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

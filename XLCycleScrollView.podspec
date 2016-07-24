@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/marlonxlj/XLCycleScrollView.git", :tag => "0.0.2" }
 
   # s.source_files  = "XLCycleScrollView","XLCycleScrollView/Lib/XLCycleScrollView/**/*.{h,m}"
-  s.source_files  = "Libs/XLCycleScrollView/**/*.{h,m}"
+  s.source_files  = "XLCycleScrollView/Lib/XLCycleScrollView/**/*.{h,m}"
 
   s.requires_arc = true
 
